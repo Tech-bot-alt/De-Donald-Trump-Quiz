@@ -109,11 +109,11 @@
             let q = questions[currentQuestion];
             let buttons = document.querySelectorAll('.options button');
             if (index === q.correct) {
-                new Howl({ src: ['https://www.myinstants.com/media/sounds/success-fanfare-trumpets.mp3'] }).play();
+                new Howl({ src: ['https://www.soundbible.com/mp3/applause-01.wav'] }).play();
                 buttons[index].style.background = "#28a745";
                 score++;
             } else {
-                new Howl({ src: ['https://www.myinstants.com/media/sounds/wrong-answer.mp3'] }).play();
+                new Howl({ src: ['https://www.soundbible.com/mp3/Error%20Bell%20-%20A%20SoundBible.com%20Creation.mp3'] }).play();
                 buttons[index].style.background = "#dc3545";
                 buttons[q.correct].style.background = "#28a745";
             }
