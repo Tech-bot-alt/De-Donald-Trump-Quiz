@@ -56,6 +56,20 @@
         .next-btn {
             display: none;
         }
+        .extra-btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .extra-btn:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -129,7 +143,8 @@
             } else {
                 quizDiv.innerHTML = `<h2 class='animate__animated animate__zoomIn'>Gefeliciteerd! Je hebt de quiz voltooid!</h2>
                                      <p>Je hebt <strong>${score}</strong> van de ${questions.length} vragen goed!</p>
-                                     <button class='start-btn' onclick='restartQuiz()'>Opnieuw spelen</button>`;
+                                     <button class='start-btn' onclick='restartQuiz()'>Opnieuw spelen</button>
+                                     <a class='extra-btn' href='https://montessorischoolwassenaar-my.sharepoint.com/:w:/g/personal/paul4583_montessorischoolwassenaar_nl/EU2XEI-QrXFNoP_kqDqLbroBbMFknvCjR9Qhyw7LbLTqaA?e=Vw9qEL' target='_blank'>Bekijk ook mijn Word document</a>`;
                 document.querySelector('.next-btn').style.display = "none";
             }
         }
